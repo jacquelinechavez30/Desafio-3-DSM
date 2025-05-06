@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Digital Safe</string>
+    <string name="cargando">Cargando...</string>
+    <string name="cerrarsesion">Cerrar Sesion</string>
+    <string name="Iniciar_sesión">Iniciar Sesión</string>
+    <string name="Iniciar_sesion_action_TextView">Ya tengo una cuenta, quiero iniciar sesión</string>
+    <string name="Iniciar_sesión_bienvenida">Inicio de Sesión</string>
+    <string name="Registrase">¿No tienes cuenta? Regístrate aquí</string>
+    <string name="Registrarse_Action_Button">Registrarse</string>
+    <string name="Guardar">Guardar</string>
+    <string name="nombre">Nombre</string>
+    <string name="nombreestudiante">Nombre</string>
+    <string name="apellidoestudiante">Apellido</string>
+    <string name="correo">Correo electrónico</string>
+    <string name="contraseña">Contraseña</string>
+    <string name="Cancelar">Cancelar</string>
+    <string name="registrarse_title">Registro de usuarios</string>
+
+</resources>
