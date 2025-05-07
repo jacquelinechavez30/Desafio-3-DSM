@@ -9,12 +9,14 @@
 
     <ImageView
         android:id="@+id/splashImage"
-        android:layout_width="407dp"
-        android:layout_height="603dp"
+        android:layout_width="337dp"
+        android:layout_height="421dp"
         android:layout_centerInParent="true"
         android:scaleType="centerInside"
         android:src="@drawable/digitalsafe"
-        tools:ignore="MissingConstraints" />
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="37dp"
+        tools:layout_editor_absoluteY="85dp" />
 
     <ProgressBar
         android:id="@+id/progressBar"
@@ -28,8 +30,10 @@
         android:indeterminate="true"
         app:layout_constraintBottom_toTopOf="@+id/splashImage"
         app:layout_constraintEnd_toStartOf="@+id/splashImage"
+        app:layout_constraintHorizontal_bias="0.517"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.589" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -43,7 +47,9 @@
         android:text="@string/cargando"
         app:layout_constraintBottom_toTopOf="@+id/splashImage"
         app:layout_constraintEnd_toStartOf="@+id/splashImage"
+        app:layout_constraintHorizontal_bias="0.509"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.594" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -50,4 +50,11 @@ dependencies {
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
+    //Implementaciones de Retrofit ,Gson, recyclerview y okhttp
+    implementation(libs.retrofit)
+    implementation(libs.retrofit.converter.gson)
+    implementation(libs.recyclerview)
+    implementation(libs.okhttp.logging.interceptor)
+    //piccaso
+    implementation("com.squareup.picasso:picasso:2.8")
 }

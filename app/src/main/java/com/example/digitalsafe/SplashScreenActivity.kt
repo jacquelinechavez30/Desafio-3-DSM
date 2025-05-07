@@ -12,10 +12,12 @@ import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 
 class SplashScreenActivity : AppCompatActivity() {
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContentView(R.layout.activity_splash_screen)
+
 
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
@@ -29,11 +31,6 @@ class SplashScreenActivity : AppCompatActivity() {
         val fadeOut = AlphaAnimation(1.0f, 0.0f)
         fadeOut.duration = 5000
         splashImage.startAnimation(fadeOut)
-
-        // Animación de rotación
-        //val rotate = ObjectAnimator.ofFloat(splashImage, "rotation", 0f, 360f)
-        // rotate.duration = 5000  // Rotación en 2 segundos
-        //rotate.start()
 
         Handler().postDelayed({
             progressBar.progress = 100

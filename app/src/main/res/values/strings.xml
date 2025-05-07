@@ -8,12 +8,16 @@
     <string name="Registrase">¿No tienes cuenta? Regístrate aquí</string>
     <string name="Registrarse_Action_Button">Registrarse</string>
     <string name="Guardar">Guardar</string>
-    <string name="nombre">Nombre</string>
-    <string name="nombreestudiante">Nombre</string>
-    <string name="apellidoestudiante">Apellido</string>
+    <string name="Titulo">Titulo</string>
+    <string name="Tipo">Tipo</string>
+    <string name="Enlace">Enlace</string>
+    <string name="URL_de_imagen">URL de Imagen</string>
+    <string name="Agregar_recurso">Agregar Recurso</string>
+    <string name="Descripcion">Descripcion</string>
     <string name="correo">Correo electrónico</string>
     <string name="contraseña">Contraseña</string>
     <string name="Cancelar">Cancelar</string>
     <string name="registrarse_title">Registro de usuarios</string>
+    <string name="agregarrecursos">agregar</string>
 
 </resources>
