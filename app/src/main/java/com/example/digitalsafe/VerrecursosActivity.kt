@@ -87,6 +87,7 @@ class VerrecursosActivity : AppCompatActivity() {
 
                         adapter.onModificarClick = { recurso ->
                             val intent = Intent(this@VerrecursosActivity, EditarrecursosActivity::class.java)
+                            intent.putExtra("recursoId", recurso.id)
                             intent.putExtra("recursoTitulo", recurso.titulo)
                             intent.putExtra("recursoDescripcion", recurso.descripcion)
                             intent.putExtra("recursoTipo", recurso.tipo)
