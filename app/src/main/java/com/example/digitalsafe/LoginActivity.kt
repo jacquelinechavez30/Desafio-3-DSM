@@ -70,7 +70,7 @@ class LoginActivity : AppCompatActivity() {
         //Verificación del usuario
         authStateListener = FirebaseAuth.AuthStateListener {
                 auth ->
-            if(auth.currentUser != null) {
+            if(auth.currentUser != null) { // Esto redirigiría al dashboard porque la sesión ya está activa.
                 // Cambiando la vista
                 val intent = Intent(this, VerrecursosActivity::class.java)
                 val uid = auth.currentUser?.uid

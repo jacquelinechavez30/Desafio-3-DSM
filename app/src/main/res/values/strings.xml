@@ -19,5 +19,7 @@
     <string name="Cancelar">Cancelar</string>
     <string name="registrarse_title">Registro de usuarios</string>
     <string name="agregarrecursos">agregar</string>
-
+    <string name = "modificar">Modificar</string>
+    <string name = "eliminar" >Eliminar</string>
+    <string name = "modificarRecurso">Modificar Recurso</string>
 </resources>

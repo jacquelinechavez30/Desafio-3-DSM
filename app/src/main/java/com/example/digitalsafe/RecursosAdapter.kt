@@ -14,6 +14,8 @@ class RecursosAdapter(private val recursos: List<Recursos>) :
     RecyclerView.Adapter<RecursosAdapter.ViewHolder>() {
 
     private var onItemClick: ((Recursos) -> Unit)? = null
+     var onModificarClick : ((Recursos) -> Unit) ?= null
+     var onEliminarClick : ((Recursos) -> Unit) ?= null
 
     class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
         val idTextView: TextView = itemView.findViewById(R.id.tvIdRecurso)
@@ -22,6 +24,8 @@ class RecursosAdapter(private val recursos: List<Recursos>) :
         val tipoTextView: TextView = itemView.findViewById(R.id.tvTipoRecurso)
         val enlaceTextView: TextView = itemView.findViewById(R.id.tvEnlaceRecurso)
         val imagenImageView: ImageView = itemView.findViewById(R.id.ivImagenRecurso)
+        val modificarButton: TextView = itemView.findViewById(R.id.btnModificar)
+        val eliminarButton: TextView = itemView.findViewById(R.id.btnEliminar)
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
@@ -45,6 +49,17 @@ class RecursosAdapter(private val recursos: List<Recursos>) :
             holder.imagenImageView.visibility = View.GONE
         }
 
+        // acción para modificar
+        holder.modificarButton.setOnClickListener {
+            onModificarClick?.invoke(recurso)
+        }
+
+        // acción para eliminar
+        holder.eliminarButton.setOnClickListener {
+            onEliminarClick?.invoke(recurso)
+        }
+
+        // acción para ver detalles
         holder.itemView.setOnClickListener {
             onItemClick?.invoke(recurso)
         }

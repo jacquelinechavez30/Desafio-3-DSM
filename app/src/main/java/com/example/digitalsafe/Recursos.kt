@@ -1,6 +1,7 @@
 package com.example.digitalsafe
 
-data class Recursos (
+
+data class Recursos(
         val id: Int,
         val titulo: String,
         val descripcion: String,

@@ -2,6 +2,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     android:padding="16dp">
 
@@ -49,6 +50,44 @@
         android:layout_marginTop="8dp"
         android:scaleType="centerCrop"
         android:visibility="gone"  />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="16dp">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnModificar"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="@string/modificar"
+            android:textStyle="bold"
+            android:textSize="18dp"
+            android:layout_height="10mm"
+            android:layout_marginStart="10dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:backgroundTint="@color/color_light_purple"
+            app:cornerRadius="10dp"
+            />
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnEliminar"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="@string/eliminar"
+            android:textStyle="bold"
+            android:textSize="18dp"
+            android:layout_height="10mm"
+            android:layout_marginStart="10dp"
+            android:backgroundTint="@color/color_rojo"
+            android:layout_gravity="center"
+            android:gravity="center"
+            app:cornerRadius="10dp"
+            />
+    </LinearLayout>
+
+
 
 
 </LinearLayout>
